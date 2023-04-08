@@ -6,15 +6,36 @@ Unit 8: Group Milestone - README
 :::
 
 # WalletWise
+Spending made smart
 
-## Table of Contents
-1. [Overview](#Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
 
-## Overview
-### Description
-Tracks what music an individual listens to, and pairs them with others based on that music. Could be potentially used as a dating app, or just meeting new friends with similar music tastes.
+## Problem
+Many people struggle with financial literacy and keeping their finances organized. This can lead to overspending and missed opportunities for saving money. Traditional methods of tracking expenses can be time-consuming and inefficient. However, with the help of technology and tools like expense tracking apps, it is now easier than ever to manage finances effectively. By providing a calendar-based system, automatic metadata retrieval, and other features, expense tracking apps like WalletWise are helping to solve the common problem of financial illiteracy and disorganization.
+
+## Proposal
+Develop an ios calendar-based expense tracker app that would allow the user to track his/her expenses throughout the week/month/year and access the details of each expense(receipt picture? locations on a map? description?)
+
+## Requirements
+Apple Calendar API, Apple Pay API, Map API…
+
+## Stretch Requirements
+Instead of allowing the user to manually enter expenses, we could additionally integrate Apple Pay/Wallet API so the user’s expenses will automatically show up on the calendar and we can retrieve the picture and location by accessing the metadata of the expense. We could also add a Tip Calculator feature that would calculate the tip amount for the user and add it as an expense.
+
+
+
+# VIEWS
+Login View
+Signup View
+Profile View 
+Calendar View - Home Screen
+Tab Bar -  with the following options: Summary, Tips Calculator, Logout, Profile
+Subview: Summary View
+Subview: Infographics view - summary of expenses based on each category
+Subview: List of Expenses for that specific Day
+Subview: Expense View - receipt, location, description, category…
+
+
+
 
 ### App Evaluation
 - **Category:** Social Networking / Music
