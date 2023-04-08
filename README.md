@@ -24,15 +24,15 @@ Instead of allowing the user to manually enter expenses, we could additionally i
 
 
 # VIEWS
-Login View
-Signup View
-Profile View 
-Calendar View - Home Screen
-Tab Bar -  with the following options: Summary, Tips Calculator, Logout, Profile
-Subview: Summary View
-Subview: Infographics view - summary of expenses based on each category
-Subview: List of Expenses for that specific Day
-Subview: Expense View - receipt, location, description, category…
+* Login View
+* Signup View
+* Profile View 
+* Calendar View - Home Screen
+* Tab Bar -  with the following options: Summary, Tips Calculator, Logout, Profile
+* Subview: Summary View
+* Subview: Infographics view - summary of expenses based on each category
+* Subview: List of Expenses for that specific Day
+* Subview: Expense View - receipt, location, description, category…
 
 
 
