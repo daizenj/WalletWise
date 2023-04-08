@@ -6,7 +6,7 @@ Unit 8: Group Milestone - README
 :::
 
 # WalletWise
-Spending made smart
+Slogan: Spending made smart
 
 ## Category
 Finance
@@ -41,7 +41,7 @@ Instead of allowing the user to manually enter expenses, we could additionally i
 * Make Profile View Functional. Right now only buttons are implemented
 * User's account is intergrated with Apple Pay/Wallet API
 
-## VIEWS
+## Views
 * Login View
 * Signup View
 * Profile View 
