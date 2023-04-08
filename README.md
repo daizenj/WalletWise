@@ -1,16 +1,11 @@
 Unit 8: Group Milestone - README
 ===
 
-:::info
-**Below is an example** of what your **Group Project README** should include and how it should be structured for the **Unit 8 Group Milestone Submission**.
-:::
-
 # WalletWise
 Slogan: Spending made smart
 
 ## Category
 Finance
-
 
 ## Problem
 Many people struggle with financial literacy and keeping their finances organized. This can lead to overspending and missed opportunities for saving money. Traditional methods of tracking expenses can be time-consuming and inefficient. However, with the help of technology and tools like expense tracking apps, it is now easier than ever to manage finances effectively. By providing a calendar-based system, automatic metadata retrieval, and other features, expense tracking apps like WalletWise are helping to solve the common problem of financial illiteracy and disorganization.
