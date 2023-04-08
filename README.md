@@ -2,7 +2,7 @@ Unit 8: Group Milestone - README
 ===
 
 # WalletWise
-Spending made smart
+> Spending made smart
 
 ## Category
 Finance
