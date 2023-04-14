@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B760915329E9CA3A000C7FB6 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760915229E9CA3A000C7FB6 /* SummaryViewController.swift */; };
 		B7EFF4DA29E1178D0076146F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4D929E1178D0076146F /* AppDelegate.swift */; };
 		B7EFF4DC29E1178D0076146F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4DB29E1178D0076146F /* SceneDelegate.swift */; };
 		B7EFF4DE29E1178D0076146F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4DD29E1178D0076146F /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B760915229E9CA3A000C7FB6 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		B7EFF4D629E1178D0076146F /* WalletWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EFF4D929E1178D0076146F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7EFF4DB29E1178D0076146F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				B7EFF4D929E1178D0076146F /* AppDelegate.swift */,
 				B7EFF4DB29E1178D0076146F /* SceneDelegate.swift */,
 				B7EFF4DD29E1178D0076146F /* ViewController.swift */,
+				B760915229E9CA3A000C7FB6 /* SummaryViewController.swift */,
 				B7EFF4DF29E1178D0076146F /* Main.storyboard */,
 				B7EFF4E229E1178D0076146F /* Assets.xcassets */,
 				B7EFF4E429E1178D0076146F /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				B7EFF4DE29E1178D0076146F /* ViewController.swift in Sources */,
 				B7EFF4DA29E1178D0076146F /* AppDelegate.swift in Sources */,
 				B7EFF4DC29E1178D0076146F /* SceneDelegate.swift in Sources */,
+				B760915329E9CA3A000C7FB6 /* SummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
