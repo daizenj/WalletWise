@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		927EC44488DA0DAAA7DF67BA /* Pods_WalletWise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3756546E2081E442CD103682 /* Pods_WalletWise.framework */; };
 		B760915329E9CA3A000C7FB6 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760915229E9CA3A000C7FB6 /* SummaryViewController.swift */; };
 		B7EFF4DA29E1178D0076146F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4D929E1178D0076146F /* AppDelegate.swift */; };
 		B7EFF4DC29E1178D0076146F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4DB29E1178D0076146F /* SceneDelegate.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3756546E2081E442CD103682 /* Pods_WalletWise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletWise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		687B8539A0478F484D6F2F01 /* Pods-WalletWise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletWise.debug.xcconfig"; path = "Target Support Files/Pods-WalletWise/Pods-WalletWise.debug.xcconfig"; sourceTree = "<group>"; };
 		B760915229E9CA3A000C7FB6 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		B7EFF4D629E1178D0076146F /* WalletWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EFF4D929E1178D0076146F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		B7EFF4E229E1178D0076146F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7EFF4E529E1178D0076146F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7EFF4E729E1178D0076146F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA7CFE0792F0C07EB10A8B1 /* Pods-WalletWise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletWise.release.xcconfig"; path = "Target Support Files/Pods-WalletWise/Pods-WalletWise.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				927EC44488DA0DAAA7DF67BA /* Pods_WalletWise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9975E11352564D93F4FE6453 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				687B8539A0478F484D6F2F01 /* Pods-WalletWise.debug.xcconfig */,
+				BDA7CFE0792F0C07EB10A8B1 /* Pods-WalletWise.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B7EFF4CD29E1178D0076146F = {
 			isa = PBXGroup;
 			children = (
 				B7EFF4D829E1178D0076146F /* WalletWise */,
 				B7EFF4D729E1178D0076146F /* Products */,
+				9975E11352564D93F4FE6453 /* Pods */,
+				E368CF45B140462EBC6DF7F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +86,14 @@
 			path = WalletWise;
 			sourceTree = "<group>";
 		};
+		E368CF45B140462EBC6DF7F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3756546E2081E442CD103682 /* Pods_WalletWise.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7EFF4EA29E1178D0076146F /* Build configuration list for PBXNativeTarget "WalletWise" */;
 			buildPhases = (
+				81A5E771D1BA8E42C67D414F /* [CP] Check Pods Manifest.lock */,
 				B7EFF4D229E1178D0076146F /* Sources */,
 				B7EFF4D329E1178D0076146F /* Frameworks */,
 				B7EFF4D429E1178D0076146F /* Resources */,
+				0F05E6373607BA3E8CB84450 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F05E6373607BA3E8CB84450 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WalletWise/Pods-WalletWise-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WalletWise/Pods-WalletWise-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WalletWise/Pods-WalletWise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81A5E771D1BA8E42C67D414F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WalletWise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B7EFF4D229E1178D0076146F /* Sources */ = {
@@ -286,11 +354,13 @@
 		};
 		B7EFF4EB29E1178D0076146F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 687B8539A0478F484D6F2F01 /* Pods-WalletWise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FW5BACSZ6A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WalletWise/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WalletWise;
@@ -316,11 +386,13 @@
 		};
 		B7EFF4EC29E1178D0076146F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDA7CFE0792F0C07EB10A8B1 /* Pods-WalletWise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FW5BACSZ6A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WalletWise/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WalletWise;
