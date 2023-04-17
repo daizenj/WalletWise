@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3528BEBD29ECF465001B3906 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3528BEBC29ECF465001B3906 /* ParseSwift */; };
+		3528BEC029ECF491001B3906 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3528BEBF29ECF491001B3906 /* Alamofire */; };
+		3528BEC329ECF4ED001B3906 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3528BEC229ECF4ED001B3906 /* AlamofireImage */; };
+		3528BEC529ECF551001B3906 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528BEC429ECF551001B3906 /* LoginViewController.swift */; };
+		3528BEC729ECF57E001B3906 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528BEC629ECF57E001B3906 /* SignUpViewController.swift */; };
 		927EC44488DA0DAAA7DF67BA /* Pods_WalletWise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3756546E2081E442CD103682 /* Pods_WalletWise.framework */; };
 		B760915329E9CA3A000C7FB6 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760915229E9CA3A000C7FB6 /* SummaryViewController.swift */; };
 		B7EFF4DA29E1178D0076146F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4D929E1178D0076146F /* AppDelegate.swift */; };
@@ -18,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3528BEC429ECF551001B3906 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3528BEC629ECF57E001B3906 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3756546E2081E442CD103682 /* Pods_WalletWise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletWise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		687B8539A0478F484D6F2F01 /* Pods-WalletWise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletWise.debug.xcconfig"; path = "Target Support Files/Pods-WalletWise/Pods-WalletWise.debug.xcconfig"; sourceTree = "<group>"; };
 		B760915229E9CA3A000C7FB6 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3528BEC029ECF491001B3906 /* Alamofire in Frameworks */,
+				3528BEC329ECF4ED001B3906 /* AlamofireImage in Frameworks */,
+				3528BEBD29ECF465001B3906 /* ParseSwift in Frameworks */,
 				927EC44488DA0DAAA7DF67BA /* Pods_WalletWise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +92,8 @@
 				B7EFF4E229E1178D0076146F /* Assets.xcassets */,
 				B7EFF4E429E1178D0076146F /* LaunchScreen.storyboard */,
 				B7EFF4E729E1178D0076146F /* Info.plist */,
+				3528BEC429ECF551001B3906 /* LoginViewController.swift */,
+				3528BEC629ECF57E001B3906 /* SignUpViewController.swift */,
 			);
 			path = WalletWise;
 			sourceTree = "<group>";
@@ -112,6 +124,11 @@
 			dependencies = (
 			);
 			name = WalletWise;
+			packageProductDependencies = (
+				3528BEBC29ECF465001B3906 /* ParseSwift */,
+				3528BEBF29ECF491001B3906 /* Alamofire */,
+				3528BEC229ECF4ED001B3906 /* AlamofireImage */,
+			);
 			productName = WalletWise;
 			productReference = B7EFF4D629E1178D0076146F /* WalletWise.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +157,11 @@
 				Base,
 			);
 			mainGroup = B7EFF4CD29E1178D0076146F;
+			packageReferences = (
+				3528BEBB29ECF465001B3906 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+				3528BEBE29ECF491001B3906 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3528BEC129ECF4ED001B3906 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = B7EFF4D729E1178D0076146F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,9 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3528BEC729ECF57E001B3906 /* SignUpViewController.swift in Sources */,
 				B7EFF4DE29E1178D0076146F /* ViewController.swift in Sources */,
 				B7EFF4DA29E1178D0076146F /* AppDelegate.swift in Sources */,
 				B7EFF4DC29E1178D0076146F /* SceneDelegate.swift in Sources */,
+				3528BEC529ECF551001B3906 /* LoginViewController.swift in Sources */,
 				B760915329E9CA3A000C7FB6 /* SummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +462,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3528BEBB29ECF465001B3906 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		3528BEBE29ECF491001B3906 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		3528BEC129ECF4ED001B3906 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3528BEBC29ECF465001B3906 /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3528BEBB29ECF465001B3906 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+		3528BEBF29ECF491001B3906 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3528BEBE29ECF491001B3906 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		3528BEC229ECF4ED001B3906 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3528BEC129ECF4ED001B3906 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7EFF4CE29E1178D0076146F /* Project object */;
 }
