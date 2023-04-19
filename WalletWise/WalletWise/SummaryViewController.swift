@@ -9,7 +9,7 @@ import UIKit
 import Charts
 
 class SummaryViewController: UIViewController, ChartViewDelegate {
-
+    @IBOutlet weak var pieChart: PieChartView!
     @IBOutlet weak var dropDown: UIPickerView!
     @IBOutlet weak var textBox: UITextField!
     @IBOutlet weak var downButton: UIButton!
@@ -17,10 +17,13 @@ class SummaryViewController: UIViewController, ChartViewDelegate {
     //Creating summary view list
     var frequencyList = ["Daily", "Monthly", "Yearly"]
     //Create pie chart
-    var pieChart = PieChartView()
+    var pieDataEntry1 = PieChartDataEntry(value:0)
+    var pieDataEntry2 = PieChartDataEntry(value:0)
+    var entries = [PieChartDataEntry]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.view.backgroundColor = UIColor.rgb(red: 46, green: 49, blue: 72)
+        self.view.backgroundColor = UIColor.rgb(red: 46, green: 49, blue: 72)
         self.view.backgroundColor = UIColor.white
         downButton.tintColor = UIColor.rgb(red: 239, green: 186, blue: 125)
         textBox.text = "Select Frequency"
@@ -31,7 +34,22 @@ class SummaryViewController: UIViewController, ChartViewDelegate {
         textBox.rightView = downButton
         textBox.rightViewMode = .always
         downButton.setImage(UIImage(systemName: "arrowtriangle.down.square.fill"), for: .normal)
-        pieChart.delegate = self
+        pieChart.chartDescription.text = ""
+        pieDataEntry1.value = 5.0
+        pieDataEntry2.value = 10.0
+        pieDataEntry1.label = "Groceries"
+        pieDataEntry2.label = "Entertainment"
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = Locale.current
+        let currencyString = formatter.string(from: NSNumber(value: pieDataEntry2.value))
+        pieDataEntry2.label = "Entertainment (\(currencyString ?? ""))"
+        entries = [pieDataEntry1, pieDataEntry2]
+        let dataSet = PieChartDataSet(entries: entries, label: "")
+        dataSet.valueFormatter = DefaultValueFormatter(formatter: formatter)
+        updateChartData(dataSet: dataSet)
+        
+        
         
         // Add first squares with more details
         let squareColors = [UIColor.red, UIColor.blue]
@@ -81,9 +99,7 @@ class SummaryViewController: UIViewController, ChartViewDelegate {
         
         
         
-        //Secon set of squares
-        
-        
+        //Second set of squares
         
         let squareColors2 = [UIColor.systemTeal, UIColor.orange]
         var squareViews2 = [UIView]()
@@ -141,28 +157,23 @@ class SummaryViewController: UIViewController, ChartViewDelegate {
         self.dropDown.isHidden = false
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-//        pieChart.frame = CGRect(x:100, y:100, width: self.view.frame.size.width/1.5, height: self.view.frame.size.width/1.5)
-//        pieChart.center = view.center
+    func updateChartData(dataSet: PieChartDataSet){
+        pieChart.data = PieChartData(dataSet: dataSet)
         
-        let chartWidth = self.view.frame.size.width / 1.5
-        let chartHeight = chartWidth
-        let chartX = (self.view.frame.size.width - chartWidth) / 2
-        let chartY: CGFloat = 220
-
-        pieChart.frame = CGRect(x: chartX, y: chartY, width: chartWidth, height: chartHeight)
-        view.addSubview(pieChart)
-        
-        var entries = [ChartDataEntry]()
-        //Eventually will get this data from database
-        for x in 0..<4{
-            entries.append(ChartDataEntry(x: Double(x), y: Double(x)))
-        }
-        let set = PieChartDataSet(entries:entries)
-        set.colors = ChartColorTemplates.material()
-        let data = PieChartData(dataSet: set)
-        pieChart.data = data
+        // Format the chart values as currency
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = Locale.current
+        pieChart.data?.setValueFormatter(DefaultValueFormatter(formatter: formatter))
+        pieChart.legend.enabled = false
+        pieChart.holeRadiusPercent = 0.5
+        pieChart.transparentCircleColor = UIColor.clear
+        pieChart.holeColor = UIColor.white
+        pieChart.centerText = "Spending"
+        pieChart.drawEntryLabelsEnabled = false
+        pieChart.notifyDataSetChanged()
+        let colors = [UIColor.red, UIColor.blue]
+        dataSet.colors = colors
     }
 }
 

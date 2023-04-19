@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BVc-Ks-w6a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BVc-Ks-w6a">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -39,11 +39,11 @@
             <objects>
                 <viewController id="gv4-vX-HCn" customClass="SummaryViewController" customModule="WalletWise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uP2-fZ-Y6F" userLabel="SummaryView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-75" translatesAutoresizingMaskIntoConstraints="NO" id="Mx7-9V-9j5">
-                                <rect key="frame" x="20" y="68" width="374" height="34"/>
+                                <rect key="frame" x="20" y="20" width="374" height="34"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U40-oE-Xv2">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -74,25 +74,34 @@
                                     </pickerView>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWN-Jj-ZoW" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="50" y="64" width="314" height="410"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qop-bT-ZaI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="GWN-Jj-ZoW" firstAttribute="leading" secondItem="qop-bT-ZaI" secondAttribute="leading" constant="50" id="DPR-wY-9eM"/>
                             <constraint firstItem="Mx7-9V-9j5" firstAttribute="leading" secondItem="qop-bT-ZaI" secondAttribute="leading" constant="20" id="RpO-2o-u9N"/>
                             <constraint firstItem="Mx7-9V-9j5" firstAttribute="top" secondItem="qop-bT-ZaI" secondAttribute="top" constant="20" id="V0u-n4-Xmo"/>
+                            <constraint firstItem="qop-bT-ZaI" firstAttribute="trailing" secondItem="GWN-Jj-ZoW" secondAttribute="trailing" constant="50" id="cDA-RW-s7A"/>
+                            <constraint firstItem="GWN-Jj-ZoW" firstAttribute="top" secondItem="Mx7-9V-9j5" secondAttribute="bottom" constant="10" id="k3V-6s-w9I"/>
                             <constraint firstItem="qop-bT-ZaI" firstAttribute="trailing" secondItem="Mx7-9V-9j5" secondAttribute="trailing" constant="20" id="kw4-5e-5N5"/>
+                            <constraint firstItem="qop-bT-ZaI" firstAttribute="bottom" secondItem="GWN-Jj-ZoW" secondAttribute="bottom" constant="412" id="vBN-fq-Fgx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cUS-MM-4ON"/>
                     <connections>
                         <outlet property="downButton" destination="Js2-Tk-qiT" id="aRW-lx-kFT"/>
                         <outlet property="dropDown" destination="4nK-d6-Rl4" id="YDs-3u-oWG"/>
+                        <outlet property="pieChart" destination="GWN-Jj-ZoW" id="BzP-G2-VjR"/>
                         <outlet property="textBox" destination="6Q6-Tz-gv6" id="mwQ-19-ZE3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0Q-tu-1Bm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1715.2671755725189" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1714.4927536231885" y="-2.6785714285714284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FBW-zR-ukH">
@@ -130,7 +139,7 @@
         <!--Login View Controller-->
         <scene sceneID="xl8-D6-PKm">
             <objects>
-                <viewController id="kz8-v2-Ccy" customClass="LoginViewController" customModule="lab_insta_parse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kz8-v2-Ccy" customClass="LoginViewController" customModule="WalletWise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SFE-Lm-2B1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -252,7 +261,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="QHb-z8-Stv">
             <objects>
-                <viewController id="5WN-tB-3cZ" customClass="SignUpViewController" customModule="lab_insta_parse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5WN-tB-3cZ" customClass="SignUpViewController" customModule="WalletWise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wtl-Se-Ojh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

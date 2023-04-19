@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "branch" : "master",
+        "revision" : "fd87f7ce7461197ea5af6e4a865168b8fc913ee0"
+      }
+    },
+    {
+      "identity" : "alamofireimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/AlamofireImage",
+      "state" : {
+        "branch" : "master",
+        "revision" : "af1c41645ef2d3ab48ffb3fb3a11941c71e5f9a0"
+      }
+    },
+    {
+      "identity" : "parse-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/parse-community/Parse-Swift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3d4bb13acd7496a49b259e541928ad493219d363"
+      }
+    }
+  ],
+  "version" : 2
+}
