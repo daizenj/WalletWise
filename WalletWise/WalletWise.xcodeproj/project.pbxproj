@@ -14,6 +14,7 @@
 		3528BEC729ECF57E001B3906 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528BEC629ECF57E001B3906 /* SignUpViewController.swift */; };
 		927EC44488DA0DAAA7DF67BA /* Pods_WalletWise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3756546E2081E442CD103682 /* Pods_WalletWise.framework */; };
 		B760915329E9CA3A000C7FB6 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760915229E9CA3A000C7FB6 /* SummaryViewController.swift */; };
+		B77E8A5229F38A9B00F379E2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77E8A5129F38A9B00F379E2 /* ProfileViewController.swift */; };
 		B7EFF4DA29E1178D0076146F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4D929E1178D0076146F /* AppDelegate.swift */; };
 		B7EFF4DC29E1178D0076146F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4DB29E1178D0076146F /* SceneDelegate.swift */; };
 		B7EFF4DE29E1178D0076146F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4DD29E1178D0076146F /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 		3756546E2081E442CD103682 /* Pods_WalletWise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletWise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		687B8539A0478F484D6F2F01 /* Pods-WalletWise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletWise.debug.xcconfig"; path = "Target Support Files/Pods-WalletWise/Pods-WalletWise.debug.xcconfig"; sourceTree = "<group>"; };
 		B760915229E9CA3A000C7FB6 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		B77E8A5129F38A9B00F379E2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B7EFF4D629E1178D0076146F /* WalletWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EFF4D929E1178D0076146F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7EFF4DB29E1178D0076146F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				B7EFF4E729E1178D0076146F /* Info.plist */,
 				3528BEC429ECF551001B3906 /* LoginViewController.swift */,
 				3528BEC629ECF57E001B3906 /* SignUpViewController.swift */,
+				B77E8A5129F38A9B00F379E2 /* ProfileViewController.swift */,
 			);
 			path = WalletWise;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				B7EFF4DE29E1178D0076146F /* ViewController.swift in Sources */,
 				B7EFF4DA29E1178D0076146F /* AppDelegate.swift in Sources */,
 				B7EFF4DC29E1178D0076146F /* SceneDelegate.swift in Sources */,
+				B77E8A5229F38A9B00F379E2 /* ProfileViewController.swift in Sources */,
 				3528BEC529ECF551001B3906 /* LoginViewController.swift in Sources */,
 				B760915329E9CA3A000C7FB6 /* SummaryViewController.swift in Sources */,
 			);
