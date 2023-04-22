@@ -75,7 +75,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWN-Jj-ZoW" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="50" y="64" width="314" height="410"/>
+                                <rect key="frame" x="50" y="69" width="314" height="420"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -86,9 +86,9 @@
                             <constraint firstItem="Mx7-9V-9j5" firstAttribute="leading" secondItem="qop-bT-ZaI" secondAttribute="leading" constant="20" id="RpO-2o-u9N"/>
                             <constraint firstItem="Mx7-9V-9j5" firstAttribute="top" secondItem="qop-bT-ZaI" secondAttribute="top" constant="20" id="V0u-n4-Xmo"/>
                             <constraint firstItem="qop-bT-ZaI" firstAttribute="trailing" secondItem="GWN-Jj-ZoW" secondAttribute="trailing" constant="50" id="cDA-RW-s7A"/>
-                            <constraint firstItem="GWN-Jj-ZoW" firstAttribute="top" secondItem="Mx7-9V-9j5" secondAttribute="bottom" constant="10" id="k3V-6s-w9I"/>
+                            <constraint firstItem="GWN-Jj-ZoW" firstAttribute="top" secondItem="Mx7-9V-9j5" secondAttribute="bottom" constant="15" id="k3V-6s-w9I"/>
                             <constraint firstItem="qop-bT-ZaI" firstAttribute="trailing" secondItem="Mx7-9V-9j5" secondAttribute="trailing" constant="20" id="kw4-5e-5N5"/>
-                            <constraint firstItem="qop-bT-ZaI" firstAttribute="bottom" secondItem="GWN-Jj-ZoW" secondAttribute="bottom" constant="412" id="vBN-fq-Fgx"/>
+                            <constraint firstItem="qop-bT-ZaI" firstAttribute="bottom" secondItem="GWN-Jj-ZoW" secondAttribute="bottom" constant="397" id="vBN-fq-Fgx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cUS-MM-4ON"/>
