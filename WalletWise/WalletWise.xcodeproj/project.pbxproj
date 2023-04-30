@@ -17,9 +17,14 @@
 		9B315AC529FEB2B300E405F3 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B315AC429FEB2B300E405F3 /* CalendarHelper.swift */; };
 		B760915329E9CA3A000C7FB6 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760915229E9CA3A000C7FB6 /* SummaryViewController.swift */; };
 		B77E8A5229F38A9B00F379E2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77E8A5129F38A9B00F379E2 /* ProfileViewController.swift */; };
+		B7B7523B29FEC79800A53B18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7523A29FEC79800A53B18 /* User.swift */; };
+		B7B7523D29FEC7B300A53B18 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7523C29FEC7B300A53B18 /* Transaction.swift */; };
+		B7B7523F29FEC7CD00A53B18 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7523E29FEC7CD00A53B18 /* Company.swift */; };
+		B7B7524329FEC81F00A53B18 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7524229FEC81F00A53B18 /* TransactionCell.swift */; };
+		B7B7524529FEC8C000A53B18 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7524429FEC8C000A53B18 /* DetailViewController.swift */; };
 		B7EFF4DA29E1178D0076146F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4D929E1178D0076146F /* AppDelegate.swift */; };
 		B7EFF4DC29E1178D0076146F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4DB29E1178D0076146F /* SceneDelegate.swift */; };
-		B7EFF4DE29E1178D0076146F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4DD29E1178D0076146F /* ViewController.swift */; };
+		B7EFF4DE29E1178D0076146F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4DD29E1178D0076146F /* CalendarViewController.swift */; };
 		B7EFF4E129E1178D0076146F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7EFF4DF29E1178D0076146F /* Main.storyboard */; };
 		B7EFF4E329E1178D0076146F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7EFF4E229E1178D0076146F /* Assets.xcassets */; };
 		B7EFF4E629E1178D0076146F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7EFF4E429E1178D0076146F /* LaunchScreen.storyboard */; };
@@ -34,10 +39,15 @@
 		9B315AC429FEB2B300E405F3 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
 		B760915229E9CA3A000C7FB6 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		B77E8A5129F38A9B00F379E2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B7B7523A29FEC79800A53B18 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B7B7523C29FEC7B300A53B18 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B7B7523E29FEC7CD00A53B18 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		B7B7524229FEC81F00A53B18 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		B7B7524429FEC8C000A53B18 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B7EFF4D629E1178D0076146F /* WalletWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EFF4D929E1178D0076146F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7EFF4DB29E1178D0076146F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B7EFF4DD29E1178D0076146F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7EFF4DD29E1178D0076146F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		B7EFF4E029E1178D0076146F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7EFF4E229E1178D0076146F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7EFF4E529E1178D0076146F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,7 +102,7 @@
 			children = (
 				B7EFF4D929E1178D0076146F /* AppDelegate.swift */,
 				B7EFF4DB29E1178D0076146F /* SceneDelegate.swift */,
-				B7EFF4DD29E1178D0076146F /* ViewController.swift */,
+				B7EFF4DD29E1178D0076146F /* CalendarViewController.swift */,
 				B760915229E9CA3A000C7FB6 /* SummaryViewController.swift */,
 				B7EFF4DF29E1178D0076146F /* Main.storyboard */,
 				B7EFF4E229E1178D0076146F /* Assets.xcassets */,
@@ -103,6 +113,11 @@
 				B77E8A5129F38A9B00F379E2 /* ProfileViewController.swift */,
 				9B315AC229FEB29200E405F3 /* CalendarCell.swift */,
 				9B315AC429FEB2B300E405F3 /* CalendarHelper.swift */,
+				B7B7523A29FEC79800A53B18 /* User.swift */,
+				B7B7523C29FEC7B300A53B18 /* Transaction.swift */,
+				B7B7523E29FEC7CD00A53B18 /* Company.swift */,
+				B7B7524229FEC81F00A53B18 /* TransactionCell.swift */,
+				B7B7524429FEC8C000A53B18 /* DetailViewController.swift */,
 			);
 			path = WalletWise;
 			sourceTree = "<group>";
@@ -240,15 +255,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7B7523D29FEC7B300A53B18 /* Transaction.swift in Sources */,
 				3528BEC729ECF57E001B3906 /* SignUpViewController.swift in Sources */,
 				9B315AC529FEB2B300E405F3 /* CalendarHelper.swift in Sources */,
-				B7EFF4DE29E1178D0076146F /* ViewController.swift in Sources */,
+				B7EFF4DE29E1178D0076146F /* CalendarViewController.swift in Sources */,
 				B7EFF4DA29E1178D0076146F /* AppDelegate.swift in Sources */,
 				B7EFF4DC29E1178D0076146F /* SceneDelegate.swift in Sources */,
 				B77E8A5229F38A9B00F379E2 /* ProfileViewController.swift in Sources */,
 				3528BEC529ECF551001B3906 /* LoginViewController.swift in Sources */,
 				B760915329E9CA3A000C7FB6 /* SummaryViewController.swift in Sources */,
+				B7B7524329FEC81F00A53B18 /* TransactionCell.swift in Sources */,
+				B7B7523B29FEC79800A53B18 /* User.swift in Sources */,
 				9B315AC329FEB29200E405F3 /* CalendarCell.swift in Sources */,
+				B7B7523F29FEC7CD00A53B18 /* Company.swift in Sources */,
+				B7B7524529FEC8C000A53B18 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

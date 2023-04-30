@@ -8,8 +8,7 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
+class CalendarViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {    
     @IBOutlet weak var monthLabel: UILabel!
      
     @IBOutlet weak var collectionView: UICollectionView!
@@ -24,11 +23,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //        performSegue(withIdentifier: "summaryViewSegue", sender: nil)
         // Do any additional setup after loading the view.
         
-        
         setCellsView()
         setMonthView()
     }
 
+    @IBAction func tapAction(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "detailSegue", sender: self)
+    }
     func setCellsView(){
         let width = (collectionView.frame.size.width - 2) / 8
         let height = (collectionView.frame.size.height - 2) / 8

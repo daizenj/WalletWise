@@ -15,12 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
-       
-        // https://github.com/parse-community/Parse-Swift/blob/main/ParseSwift.playground/Sources/Common.swift
-        ParseSwift.initialize(applicationId: "Z8WYOJ22LRuChlemsxLot9eJefWwBlmC6lNPPWeB",
-                              clientKey: "gNwm5gVjtMtUQyNxnKGA5hX6cNhfbtN2weuPr5jc",
+        ParseSwift.initialize(applicationId: "QUX9AjmJsbjcOnlJWfkKfjqCJaPx8iErZlV2TD58",
+                              clientKey: "HDNLu6wq1UXI7Q408A2VilP5Nm0iWfZdDoPCcy5G",
                               serverURL: URL(string: "https://parseapi.back4app.com")!)
+        return true
+
+        // https://github.com/parse-community/Parse-Swift/blob/main/ParseSwift.playground/Sources/Common.swift
+//        ParseSwift.initialize(applicationId: "Z8WYOJ22LRuChlemsxLot9eJefWwBlmC6lNPPWeB",
+//                              clientKey: "gNwm5gVjtMtUQyNxnKGA5hX6cNhfbtN2weuPr5jc",
+//                              serverURL: URL(string: "https://parseapi.back4app.com")!)
 
        
         // https://github.com/parse-community/Parse-Swift/blob/3d4bb13acd7496a49b259e541928ad493219d363/ParseSwift.playground/Pages/1%20-%20Your%20first%20Object.xcplaygroundpage/Contents.swift#L121
