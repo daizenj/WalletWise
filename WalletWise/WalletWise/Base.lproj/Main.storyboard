@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BVc-Ks-w6a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eUK-wv-2jD">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,27 +16,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WalletWise" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="3eg-AD-pBm"/>
-                    <connections>
-                        <segue destination="gv4-vX-HCn" kind="showDetail" id="7wX-qk-gm2"/>
-                        <segue destination="gv4-vX-HCn" kind="show" identifier="summaryViewSegue" id="Qfd-kh-oea"/>
-                        <segue destination="5NA-MX-TUf" kind="show" identifier="profileViewSegue" id="ahh-H9-dhH"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="889" y="-2"/>
-        </scene>
         <!--Summary View Controller-->
         <scene sceneID="6Kd-Dc-zMd">
             <objects>
@@ -46,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-75" translatesAutoresizingMaskIntoConstraints="NO" id="Mx7-9V-9j5">
-                                <rect key="frame" x="20" y="112" width="374" height="34"/>
+                                <rect key="frame" x="20" y="68" width="374" height="34"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U40-oE-Xv2">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -78,7 +57,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWN-Jj-ZoW" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="50" y="161" width="314" height="304"/>
+                                <rect key="frame" x="50" y="117" width="314" height="348"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -419,24 +398,6 @@
             <point key="canvasLocation" x="2528.985507246377" y="-3.3482142857142856"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="FBW-zR-ukH">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BVc-Ks-w6a" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4yP-dT-ZKN">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Um1-qr-Lhf"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vhm-ko-oMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="55.725190839694655" y="-2.1126760563380285"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="Dd6-7o-Exd">
             <objects>
                 <navigationController storyboardIdentifier="LoginNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="AFq-1q-pfc" sceneMemberID="viewController">
@@ -683,19 +644,19 @@
         <!--View Controller-->
         <scene sceneID="nwb-BH-792">
             <objects>
-                <viewController id="eUK-wv-2jD" customClass="ViewController" customModule="WalletWise" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="eUK-wv-2jD" customClass="ViewController" customModule="WalletWise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uZu-XR-H4M">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feb 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2D-uJ-I47">
-                                <rect key="frame" x="152.5" y="48" width="109.5" height="30"/>
+                                <rect key="frame" x="152.5" y="92" width="109.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ign-Es-CMa">
-                                <rect key="frame" x="262" y="46" width="152" height="34"/>
+                                <rect key="frame" x="262" y="90" width="152" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.right" catalog="system"/>
                                 <connections>
@@ -703,7 +664,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM5-35-NUC">
-                                <rect key="frame" x="0.0" y="46" width="152" height="34"/>
+                                <rect key="frame" x="0.0" y="90" width="152" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.left" catalog="system"/>
                                 <connections>
@@ -711,7 +672,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jn3-Xo-CXm">
-                                <rect key="frame" x="0.0" y="108" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="152" width="414" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIf-ab-Zg3">
                                         <rect key="frame" x="0.0" y="16.5" width="59" height="17"/>
@@ -761,7 +722,7 @@
                                 </constraints>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dwH-m3-u2p">
-                                <rect key="frame" x="0.0" y="158" width="414" height="680"/>
+                                <rect key="frame" x="0.0" y="202" width="414" height="611"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="dTG-Dg-uSo">
                                     <size key="itemSize" width="128" height="128"/>
@@ -835,7 +796,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m2r-jY-lYf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888" y="-701"/>
+            <point key="canvasLocation" x="978" y="-3"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cxI-An-lfu">
@@ -850,18 +811,13 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="eUK-wv-2jD" kind="relationship" relationship="rootViewController" id="Iyf-uF-ozf"/>
-                        <segue destination="eUK-wv-2jD" kind="show" identifier="mainSegue" id="HCM-h8-ET6"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrq-47-kii" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55" y="-701"/>
+            <point key="canvasLocation" x="145" y="-3"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="HCM-h8-ET6"/>
-        <segue reference="Qfd-kh-oea"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="6" width="500" height="500"/>
         <image name="arrow.right" catalog="system" width="128" height="95"/>

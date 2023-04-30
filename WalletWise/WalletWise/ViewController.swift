@@ -22,7 +22,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
 //        performSegue(withIdentifier: "summaryViewSegue", sender: nil)
-        performSegue(withIdentifier: "mainSegue", sender: nil)
         // Do any additional setup after loading the view.
         
         
