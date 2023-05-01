@@ -5,7 +5,7 @@ import UIKit
 class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBar.tintColor = UIColor.rgb(red: 239, green: 186, blue: 125)
+        self.tabBar.tintColor = UIColor.rgb(red: 236, green: 163, blue: 57)
         self.ChangeRadiusOfTabBar()
         self.ChangeUnselectedColor()
 
