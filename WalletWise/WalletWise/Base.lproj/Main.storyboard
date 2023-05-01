@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fPw-ig-wID">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WiU-l2-Qob">
     <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -16,7 +16,26 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Summary View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="Lsz-Oc-S2z">
+            <objects>
+                <tabBarController id="WiU-l2-Qob" customClass="TabBarController" customModule="WalletWise" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wmq-19-0zX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7FJ-fg-yHh" kind="relationship" relationship="viewControllers" id="kzV-NP-Gom"/>
+                        <segue destination="gv4-vX-HCn" kind="relationship" relationship="viewControllers" id="R6x-15-MiC"/>
+                        <segue destination="5NA-MX-TUf" kind="relationship" relationship="viewControllers" id="Fbz-JI-phb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mv0-eI-EyZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2233" y="-819"/>
+        </scene>
+        <!--Summary-->
         <scene sceneID="6Kd-Dc-zMd">
             <objects>
                 <viewController id="gv4-vX-HCn" customClass="SummaryViewController" customModule="WalletWise" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,7 +44,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-75" translatesAutoresizingMaskIntoConstraints="NO" id="Mx7-9V-9j5">
-                                <rect key="frame" x="20" y="122.99999999999999" width="353" height="34.333333333333329"/>
+                                <rect key="frame" x="20" y="79" width="353" height="34.333333333333343"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U40-oE-Xv2">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
@@ -57,7 +76,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWN-Jj-ZoW" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="50" y="172.33333333333337" width="293" height="248.66666666666663"/>
+                                <rect key="frame" x="50" y="128.33333333333337" width="293" height="243.66666666666663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -73,7 +92,9 @@
                             <constraint firstItem="qop-bT-ZaI" firstAttribute="bottom" secondItem="GWN-Jj-ZoW" secondAttribute="bottom" constant="397" id="vBN-fq-Fgx"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Summary" image="chart.line.uptrend.xyaxis" catalog="system" id="v5G-Uh-EGA" userLabel="Summary"/>
                     <navigationItem key="navigationItem" id="cUS-MM-4ON"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="downButton" destination="Js2-Tk-qiT" id="aRW-lx-kFT"/>
                         <outlet property="dropDown" destination="4nK-d6-Rl4" id="YDs-3u-oWG"/>
@@ -83,9 +104,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0Q-tu-1Bm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="23"/>
+            <point key="canvasLocation" x="4889.3129770992364" y="22.535211267605636"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Settings-->
         <scene sceneID="QDH-yv-854">
             <objects>
                 <viewController id="5NA-MX-TUf" customClass="ProfileViewController" customModule="WalletWise" customModuleProvider="target" sceneMemberID="viewController">
@@ -391,26 +412,12 @@
                             <constraint firstItem="TQW-2M-lGd" firstAttribute="top" secondItem="7eP-OS-WRh" secondAttribute="bottom" constant="30" id="xb0-Zr-cKg"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" id="rAb-U1-Z6T" userLabel="Settings"/>
                     <navigationItem key="navigationItem" id="a53-wI-Kju"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ASK-8u-dy6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1714" y="23"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Dd6-7o-Exd">
-            <objects>
-                <navigationController storyboardIdentifier="LoginNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="AFq-1q-pfc" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EPW-yB-Lbt">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O1B-pB-FiV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="25" y="685"/>
+            <point key="canvasLocation" x="3941.2213740458014" y="22.535211267605636"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="xl8-D6-PKm">
@@ -722,7 +729,7 @@
                                 </constraints>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dwH-m3-u2p">
-                                <rect key="frame" x="0.0" y="213" width="393" height="605"/>
+                                <rect key="frame" x="0.0" y="213" width="393" height="556"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="dTG-Dg-uSo">
                                     <size key="itemSize" width="128" height="128"/>
@@ -791,23 +798,13 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="DrZ-0u-lSg">
-                        <rightBarButtonItems>
-                            <barButtonItem title="Item" image="chart.line.uptrend.xyaxis" catalog="system" id="xlD-ud-v8l">
-                                <connections>
-                                    <segue destination="gv4-vX-HCn" kind="show" id="uNv-q3-Zug"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Item" image="person.fill" catalog="system" id="8K5-xu-dlX">
-                                <connections>
-                                    <segue destination="5NA-MX-TUf" kind="show" id="b6u-I7-apw"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="person.fill" catalog="system" id="M3p-ii-gex"/>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="dwH-m3-u2p" id="g02-0g-m83"/>
                         <outlet property="monthLabel" destination="P2D-uJ-I47" id="w36-xv-Ldw"/>
-                        <segue destination="brK-mX-XT7" kind="show" identifier="detailSegue" id="dZj-8g-nU8"/>
+                        <segue destination="brK-mX-XT7" kind="show" identifier="detailSegue" id="y2p-dp-JCI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m2r-jY-lYf" sceneMemberID="firstResponder"/>
@@ -817,25 +814,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="164" y="23"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="lcg-fH-9LS">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fPw-ig-wID" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0J1-gG-Bg7">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="eUK-wv-2jD" kind="relationship" relationship="rootViewController" id="CVe-ol-TsQ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0m1-Io-vpb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-763" y="23"/>
+            <point key="canvasLocation" x="2002.2900763358778" y="22.535211267605636"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="bNa-RA-Sqr">
@@ -949,7 +928,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ACb-dT-Ym7" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2601" y="23"/>
+            <point key="canvasLocation" x="2872.5190839694656" y="22.535211267605636"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="84R-Pf-BaS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7FJ-fg-yHh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="Tnf-Bc-FMk" userLabel="Home"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dON-Bi-q2r">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eUK-wv-2jD" kind="relationship" relationship="rootViewController" id="cmI-ln-0Y1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cq0-q6-mlX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1075.5725190839694" y="22.535211267605636"/>
         </scene>
     </scenes>
     <resources>
@@ -962,6 +960,8 @@
         <image name="chart.line.uptrend.xyaxis" catalog="system" width="128" height="102"/>
         <image name="faceid" catalog="system" width="128" height="115"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="lock.icloud" catalog="system" width="128" height="90"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>

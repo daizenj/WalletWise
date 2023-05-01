@@ -22,6 +22,7 @@
 		B7B7523F29FEC7CD00A53B18 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7523E29FEC7CD00A53B18 /* Company.swift */; };
 		B7B7524329FEC81F00A53B18 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7524229FEC81F00A53B18 /* TransactionCell.swift */; };
 		B7B7524529FEC8C000A53B18 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7524429FEC8C000A53B18 /* DetailViewController.swift */; };
+		B7DFAE4329FF332E00018965 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFAE4229FF332E00018965 /* TabBarController.swift */; };
 		B7EFF4DA29E1178D0076146F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4D929E1178D0076146F /* AppDelegate.swift */; };
 		B7EFF4DC29E1178D0076146F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4DB29E1178D0076146F /* SceneDelegate.swift */; };
 		B7EFF4DE29E1178D0076146F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EFF4DD29E1178D0076146F /* CalendarViewController.swift */; };
@@ -44,6 +45,7 @@
 		B7B7523E29FEC7CD00A53B18 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		B7B7524229FEC81F00A53B18 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		B7B7524429FEC8C000A53B18 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B7DFAE4229FF332E00018965 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B7EFF4D629E1178D0076146F /* WalletWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EFF4D929E1178D0076146F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7EFF4DB29E1178D0076146F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,20 +106,21 @@
 				B7EFF4DB29E1178D0076146F /* SceneDelegate.swift */,
 				B7EFF4DD29E1178D0076146F /* CalendarViewController.swift */,
 				B760915229E9CA3A000C7FB6 /* SummaryViewController.swift */,
+				B7B7524429FEC8C000A53B18 /* DetailViewController.swift */,
+				3528BEC629ECF57E001B3906 /* SignUpViewController.swift */,
+				3528BEC429ECF551001B3906 /* LoginViewController.swift */,
+				B77E8A5129F38A9B00F379E2 /* ProfileViewController.swift */,
+				B7DFAE4229FF332E00018965 /* TabBarController.swift */,
 				B7EFF4DF29E1178D0076146F /* Main.storyboard */,
 				B7EFF4E229E1178D0076146F /* Assets.xcassets */,
 				B7EFF4E429E1178D0076146F /* LaunchScreen.storyboard */,
 				B7EFF4E729E1178D0076146F /* Info.plist */,
-				3528BEC429ECF551001B3906 /* LoginViewController.swift */,
-				3528BEC629ECF57E001B3906 /* SignUpViewController.swift */,
-				B77E8A5129F38A9B00F379E2 /* ProfileViewController.swift */,
 				9B315AC229FEB29200E405F3 /* CalendarCell.swift */,
 				9B315AC429FEB2B300E405F3 /* CalendarHelper.swift */,
 				B7B7523A29FEC79800A53B18 /* User.swift */,
 				B7B7523C29FEC7B300A53B18 /* Transaction.swift */,
 				B7B7523E29FEC7CD00A53B18 /* Company.swift */,
 				B7B7524229FEC81F00A53B18 /* TransactionCell.swift */,
-				B7B7524429FEC8C000A53B18 /* DetailViewController.swift */,
 			);
 			path = WalletWise;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				B7B7523B29FEC79800A53B18 /* User.swift in Sources */,
 				9B315AC329FEB29200E405F3 /* CalendarCell.swift in Sources */,
 				B7B7523F29FEC7CD00A53B18 /* Company.swift in Sources */,
+				B7DFAE4329FF332E00018965 /* TabBarController.swift in Sources */,
 				B7B7524529FEC8C000A53B18 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

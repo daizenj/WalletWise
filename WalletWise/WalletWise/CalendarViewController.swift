@@ -22,7 +22,7 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
         super.viewDidLoad()
 //        performSegue(withIdentifier: "summaryViewSegue", sender: nil)
         // Do any additional setup after loading the view.
-        
+        self.view.backgroundColor = UIColor.rgb(red: 27, green: 29, blue: 47)
         setCellsView()
         setMonthView()
     }
