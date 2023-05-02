@@ -3,7 +3,8 @@ Unit 8: Group Milestone - README
 
 # WalletWise
 > Spending made smart
-https://github.com/njounkengdaizem/WalletWise/blob/main/ios.gif
+
+<img src='https://github.com/njounkengdaizem/WalletWise/blob/main/ios.gif' />
 
 ## Category
 Finance
