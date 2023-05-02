@@ -37,7 +37,7 @@ class SummaryViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       self.view.backgroundColor = UIColor.rgb(red: 27, green: 29, blue: 47)
+        self.view.backgroundColor = UIColor.rgb(red: 27, green: 29, blue: 47)
         downButton.tintColor = UIColor.rgb(red: 239, green: 186, blue: 125)
         textBox.text = "Select Frequency"
         self.dropDown.delegate = self

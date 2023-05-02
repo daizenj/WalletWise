@@ -19,7 +19,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        self.view.backgroundColor = UIColor.rgb(red: 27, green: 29, blue: 47)
         logIn()
         //createCompanies()
         //createTransaction()
@@ -28,8 +28,8 @@ class DetailViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.allowsSelection = false
-
         tableView.refreshControl = refreshControl
+        tableView.backgroundColor = UIColor.rgb(red: 27, green: 29, blue: 47)
         refreshControl.addTarget(self, action: #selector(onPullToRefresh), for: .valueChanged)
     }
     
